@@ -9,6 +9,5 @@ public class IocTest {
         ApplicationContext applicationContext = new ApplicationContext("beans.xml");
         TransferService transferService = (TransferService) applicationContext.getBean("transferService");
         transferService.transfer("6029621011001","6029621011000",100);
-
     }
 }
